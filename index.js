@@ -20,6 +20,7 @@ app.use(bodyParser.json());
 app.use(cors());
 dotenv.config();
 
+// routes
 app.use('/auth', adminRouter);
 app.use('/auth-hre', hreRouter);
 app.use('/auth-user', userRouter);
